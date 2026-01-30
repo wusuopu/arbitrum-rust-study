@@ -83,3 +83,10 @@ cargo stylus export-abi --output=./abi.json --json
 ## 例子程序
 * stylus-hello-world
   * 一个简单的计数例子
+* stylus-erc20-token
+  * 一个简单的 ERC20 代币例子
+* stylus-erc721-token
+  * 一个简单的 NFT 例子
+
+
+

@@ -205,9 +205,8 @@ impl StylusToken {
         Ok(())
     }
 
-    /// 销毁代币（只有所有者可以调用）
+    /// 销毁代币（只有销毁持有者自己的代币）
     pub fn burn(&mut self, value: U256) -> Result<(), TokenError> {
-        self.only_owner()?;
         self.erc20.burn(self.vm().msg_sender(), value)?;
         Ok(())
     }
